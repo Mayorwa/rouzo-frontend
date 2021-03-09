@@ -1,0 +1,431 @@
+html {
+    font-size: 14px;
+    height: 100%; }
+html body {
+    height: 100%;
+    background-color: #FFFFFF;
+    direction: ltr; }
+html body.fixed-navbar {
+    padding-top: 5rem; }
+html body a {
+    color: #1E9FF2; }
+html body a:hover {
+    color: #0c84d1; }
+html body .content {
+    padding: 0;
+    position: relative;
+    transition: 300ms ease all;
+    backface-visibility: hidden;
+    min-height: calc(100% - 32px); }
+html body .content.app-content {
+    overflow: hidden;
+}
+html body .content .content-wrapper {
+    padding: 2.2rem; }
+html body .content .content-wrapper .content-header-title {
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #464855; }
+html body .la {
+    font-size: 1.4rem; }
+html body[data-col="1-column"]:not(.vertical-content-menu) .content,
+html body[data-col="1-column"]:not(.vertical-content-menu) .footer {
+    margin-left: 0px !important; }
+html body[data-col="1-column"].horizontal-layout .content,
+html body[data-col="1-column"].horizontal-layout .footer {
+    margin: 0 auto !important; }
+html body[data-col="1-column"].vertical-content-menu .content-body {
+    margin-left: 0px !important; }
+html body.boxed-layout {
+    padding-left: 0;
+    padding-right: 0; }
+html body.bg-full-screen-image {
+    background: url(../../app-assets/images/backgrounds/bg-2.jpg) no-repeat center center fixed;
+    background-size: cover; }
+html body .pace .pace-progress {
+    background: #FF4961; }
+
+/*
+* Blank page
+*/
+.blank-page .content-wrapper {
+    padding: 0 !important; }
+.blank-page .content-wrapper .flexbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    height: 100vh; }
+
+.app-content.center-layout {
+    overflow: hidden; }
+
+@media (max-width: 767.98px) {
+    html body .content .content-wrapper {
+        padding: 1rem; }
+    html body footer {
+        text-align: center; } }
+
+/*
+* Col 3 layout for detached and general type
+*/
+@media (min-width: 992px) {
+    body .content-right {
+        width: calc(100% - 500px);
+        float: right; }
+    body .content-left {
+        width: calc(100% - 500px);
+        float: left; }
+    body .content-detached {
+        width: 100%; }
+    body .content-detached.content-right {
+        float: right;
+        margin-left: -300px; }
+    body .content-detached.content-right .content-body {
+        margin-left: 320px; }
+    body .content-detached.content-left {
+        float: left;
+        margin-right: -300px; }
+    body .content-detached.content-left .content-body {
+        margin-right: 320px; }
+    .sidebar-right.sidebar-sticky {
+        float: right !important;
+        margin-left: -300px;
+        width: 300px !important; }
+    [data-col="content-left-sidebar"] .sticky-wrapper {
+        float: left; }
+    .vertical-content-menu .content .sidebar-left {
+        margin-left: 288px; }
+    .vertical-content-menu .content .content-detached.content-right {
+        float: right;
+        width: calc(100% - 300px);
+        margin-left: -300px; }
+    .vertical-content-menu .content .content-detached.content-right .content-body {
+        margin-left: 295px; }
+    .vertical-content-menu .content .content-detached.content-left {
+        float: left;
+        width: 100%;
+        margin-right: -300px; }
+    .vertical-content-menu .content .content-detached.content-left .content-body {
+        margin-right: 320px; } }
+
+/*=========================================================================================
+	File Name: sidebar.scss
+	Description: content sidebar specific scss.
+	----------------------------------------------------------------------------------------
+	Item Name: Modern Admin - Clean Bootstrap 4 Dashboard HTML Template
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+==========================================================================================*/
+.sidebar {
+    position: relative;
+    width: 100%; }
+@media (min-width: 992px) {
+    .sidebar {
+        vertical-align: top;
+        width: 500px; } }
+
+.sidebar-fixed {
+    position: fixed;
+    height: 100%;
+    overflow: scroll; }
+
+@media (min-width: 992px) {
+    .sidebar-left {
+        float: left; }
+    .sidebar-right {
+        float: right; } }
+
+.horizontal-menu-padding .header-navbar .navbar-container {
+    padding: 0; }
+
+.header-navbar .navbar-container {
+    height: auto; }
+
+footer.footer {
+    padding: 0.8rem; }
+
+footer.navbar-shadow {
+    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.1); }
+
+footer.navbar-border {
+    border-top: 1px solid #E4E7ED; }
+
+footer.footer-transparent {
+    border: none; }
+
+footer.footer-light {
+    background: #FFFFFF; }
+
+footer.footer-dark {
+    background: #2C303B;
+    color: #fff; }
+
+.position-bottom-0 {
+    bottom: 0; }
+.height-90-per {
+    height: 90% !important; }
+.height-100-per {
+    height: 100% !important; }
+
+.app-content .wizard {
+    width: 100%; }
+.app-content .wizard .content {
+    margin-left: 0 !important; }
+.app-content .wizard > .steps {
+    position: relative;
+    display: block;
+    width: 100%; }
+.app-content .wizard > .steps .current-info {
+    position: absolute;
+    left: -99999px; }
+.app-content .wizard > .steps > ul {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+.app-content .wizard > .steps > ul > li {
+    display: table-cell;
+    width: auto;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+    line-height: 0;}
+.app-content .wizard > .steps > ul > li a {
+    position: relative;
+    padding-top: 64px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block; }
+.app-content .wizard > .steps > ul > li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 9;
+    left: 0; }
+.app-content .wizard > .steps > ul > li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 9;
+    right: 0; }
+.app-content .wizard > .steps > ul > li:first-child:before {
+    content: none; }
+.app-content .wizard > .steps > ul > li:last-child:after {
+    content: none; }
+.app-content .wizard > .steps > ul > li.current > a {
+    color: #333333;
+    cursor: default; }
+.app-content .wizard > .steps > ul > li.current .step {
+    border-color: #3d22c2;
+    background-color: #fff;
+    color: #3d22c2; }
+.app-content .wizard > .steps > ul > li.disabled a {
+    color: #999999;
+    cursor: default; }
+.app-content .wizard > .steps > ul > li.disabled a:hover {
+    color: #999999;
+    cursor: default; }
+.app-content .wizard > .steps > ul > li.disabled a:focus {
+    color: #999999;
+    cursor: default; }
+.app-content .wizard > .steps > ul > li.done a {
+    color: #999999; }
+.app-content .wizard > .steps > ul > li.done a:hover {
+    color: #999999; }
+.app-content .wizard > .steps > ul > li.done a:focus {
+    color: #999999; }
+.app-content .wizard > .steps > ul > li.done .step {
+    background-color: #3d22c2;
+    border-color: #3d22c2;
+    color: #fff; }
+.app-content .wizard > .steps > ul > li.error .step {
+    border-color: #FF4961;
+    color: #FF4961; }
+.app-content .wizard > .steps .step {
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -24px;
+    z-index: 10;
+    text-align: center; }
+.app-content .wizard > .content {
+    position: relative;
+    width: auto;
+    padding: 0;
+    margin: 0; }
+.app-content .wizard > .content > .title {
+    position: absolute;
+    left: -99999px; }
+.app-content .wizard > .content > .body {
+    padding: 0 20px; }
+.app-content .wizard > .content > iframe {
+    border: 0 none;
+    width: 100%;
+    height: 100%; }
+.app-content .wizard > .actions {
+    position: relative;
+    display: block;
+    text-align: right;
+    padding: 20px;
+    padding-top: 0; }
+.app-content .wizard > .actions > ul {
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+.app-content .wizard > .actions > ul:after {
+    content: '';
+    display: table;
+    clear: both; }
+.app-content .wizard > .actions > ul > li {
+    float: left; }
+.app-content .wizard > .actions > ul > li + li {
+    margin-left: 10px; }
+.app-content .wizard > .actions > ul > li > a {
+    background: #3d22c2;
+    color: #fff;
+    display: block;
+    padding: 7px 12px;
+    border-radius: 2px;
+    border: 1px solid transparent; }
+.app-content .wizard > .actions > ul > li > a:hover {
+    -webkit-box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.05) inset;
+    box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.05) inset; }
+.app-content .wizard > .actions > ul > li > a:focus {
+    -webkit-box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.05) inset;
+    box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.05) inset; }
+.app-content .wizard > .actions > ul > li > a:active {
+    -webkit-box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.1) inset; }
+.app-content .wizard > .actions > ul > li > a[href="#previous"] {
+    background-color: #fcfcfc;
+    color: #333;
+    border: 1px solid #ddd; }
+.app-content .wizard > .actions > ul > li > a[href="#previous"]:hover {
+    -webkit-box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.02) inset;
+    box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.02) inset; }
+.app-content .wizard > .actions > ul > li > a[href="#previous"]:focus {
+    -webkit-box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.02) inset;
+    box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.02) inset; }
+.app-content .wizard > .actions > ul > li > a[href="#previous"]:active {
+    -webkit-box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.04) inset;
+    box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.04) inset; }
+.app-content .wizard > .actions > ul > li.disabled > a {
+    color: #999999; }
+.app-content .wizard > .actions > ul > li.disabled > a:hover {
+    color: #999999; }
+.app-content .wizard > .actions > ul > li.disabled > a:focus {
+    color: #999999; }
+.app-content .wizard > .actions > ul > li.disabled > a[href="#previous"] {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+.app-content .wizard > .actions > ul > li.disabled > a[href="#previous"]:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+.app-content .wizard > .actions > ul > li.disabled > a[href="#previous"]:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+.app-content .wizard.wizard-circle > .steps > ul > li:before, .app-content .wizard.wizard-circle > .steps > ul > li:after {
+    top: 43px;
+    width: 50%;
+    height: 5px;
+    background-color: #3d22c2; }
+.app-content .wizard.wizard-circle > .steps > ul > li.current:after {
+    background-color: #F4F5FA; }
+.app-content .wizard.wizard-circle > .steps > ul > li.current ~ li:before {
+    background-color: #F4F5FA; }
+.app-content .wizard.wizard-circle > .steps > ul > li.current ~ li:after {
+    background-color: #F4F5FA; }
+.app-content .wizard.wizard-circle > .steps .step {
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    border: 5px solid #F4F5FA;
+    font-size: 1.3rem;
+    border-radius: 50%; }
+.app-content .wizard.wizard-notification > .steps > ul > li:before, .app-content .wizard.wizard-notification > .steps > ul > li:after {
+    top: 39px;
+    width: 50%;
+    height: 2px;
+    background-color: #3d22c2; }
+.app-content .wizard.wizard-notification > .steps > ul > li.current .step {
+    border: 2px solid #3d22c2;
+    color: #3d22c2;
+    line-height: 36px; }
+.app-content .wizard.wizard-notification > .steps > ul > li.current .step:after {
+    border-top-color: #3d22c2; }
+.app-content .wizard.wizard-notification > .steps > ul > li.current:after {
+    background-color: #F4F5FA; }
+.app-content .wizard.wizard-notification > .steps > ul > li.current ~ li:before {
+    background-color: #F4F5FA; }
+.app-content .wizard.wizard-notification > .steps > ul > li.current ~ li:after {
+    background-color: #F4F5FA; }
+.app-content .wizard.wizard-notification > .steps > ul > li.done .step {
+    color: #FFF; }
+.app-content .wizard.wizard-notification > .steps > ul > li.done .step:after {
+    border-top-color: #3d22c2; }
+.app-content .wizard.wizard-notification > .steps .step {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.3rem;
+    border-radius: 15%;
+    background-color: #F4F5FA; }
+.app-content .wizard.wizard-notification > .steps .step:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -8px;
+    margin-bottom: -8px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 8px solid #F4F5FA; }
+.app-content .wizard.vertical > .steps {
+    display: inline;
+    float: left;
+    width: 10%; }
+.app-content .wizard.vertical > .steps > ul > li {
+    display: block;
+    width: 100%; }
+.app-content .wizard.vertical > .steps > ul > li:before, .app-content .wizard.vertical > .steps > ul > li:after {
+    background-color: transparent; }
+.app-content .wizard.vertical > .steps > ul > li.current:before, .app-content .wizard.vertical > .steps > ul > li.current:after {
+    background-color: transparent; }
+.app-content .wizard.vertical > .steps > ul > li.current ~ li:before {
+    background-color: transparent; }
+.app-content .wizard.vertical > .steps > ul > li.current ~ li:after {
+    background-color: transparent; }
+
+@media (max-width: 768px) {
+    .app-content .wizard > .steps > ul {
+        margin-bottom: 20px; }
+    .app-content .wizard > .steps > ul > li {
+        display: block;
+        float: left;
+        width: 50%; }
+    .app-content .wizard > .steps > ul > li > a {
+        margin-bottom: 0; }
+    .app-content .wizard > .steps > ul > li:first-child:before {
+        content: ''; }
+    .app-content .wizard > .steps > ul > li:last-child:after {
+        content: '';
+        background-color: #3d22c2; }
+    .app-content .wizard.vertical > .steps {
+        width: 15%; } }
+
+@media (max-width: 480px) {
+    .app-content .wizard > .steps > ul > li {
+        width: 100%; }
+    .app-content .wizard > .steps > ul > li.current:after {
+        background-color: #3d22c2; }
+    .app-content .wizard.vertical > .steps {
+        width: 20%; } }
